@@ -1,0 +1,24 @@
+{
+  "name": "invoice-parser",
+  "version": "1.0.0",
+  "description": "MCP server for parsing invoices and saving to Google Sheets",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "googleapis": "^126.0.1",
+    "pdfjs-dist": "^4.0.269"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "typescript": "^5.2.2"
+  }
+}
