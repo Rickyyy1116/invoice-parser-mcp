@@ -47,22 +47,7 @@ npm run build
 ## 使用方法
 
 1. Claudeに請求書PDFをアップロード
-2. 以下のようにMCPツールを使用してデータを保存
-
-```typescript
-await use_mcp_tool({
-  server_name: "invoice-parser",
-  tool_name: "save_to_sheet",
-  arguments: {
-    items: [
-      { item: "商品A", amount: 1000 },
-      { item: "商品B", amount: 2000 }
-    ],
-    invoiceDate: "2023年10月1日",    // オプション
-    sender: "株式会社〇〇"           // オプション
-  }
-});
-```
+2. MCPを利用して、スプシに自動で転記
 
 ## スプレッドシートの形式
 
